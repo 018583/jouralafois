@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jour à la fois | french tutoring</title>
+    <title>jour à la fois | french resources</title>
     <style>
         /* base styles & background setup */
         body {
@@ -15,6 +15,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            box-sizing: border-box;
         }
 
         html {
@@ -31,6 +32,7 @@
             border: 2px dashed #e8d0d5;
             position: relative;
             border-radius: 4px;
+            box-sizing: border-box;
         }
 
         /* main heading */
@@ -60,17 +62,6 @@
             margin: 0 auto 30px auto;
             transform: rotate(-1deg);
             color: #7a684d;
-        }
-
-        /* intro tag */
-        .intro-tag {
-            background-color: #f7f1f2;
-            padding: 12px 15px;
-            border-radius: 20px;
-            text-align: center;
-            font-size: 1rem;
-            margin-bottom: 35px;
-            color: #595354;
         }
 
         /* section heading */
@@ -188,6 +179,7 @@
         /* button container for side-by-side display */
         .btn-container {
             display: flex;
+            flex-wrap: wrap;
             gap: 15px;
             margin-top: 35px;
         }
@@ -204,14 +196,16 @@
 
         /* contact button base */
         .cta-btn {
-            flex: 1;
+            flex: 1 1 calc(50% - 15px); /* grid-like layout for 4 buttons */
+            min-width: 200px;
+            box-sizing: border-box;
             display: block;
             background-color: #e5b3be; 
             color: white;
             text-align: center;
             padding: 14px;
             text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 1rem;
             border-radius: 5px;
             border: 2px solid #a69598;
             box-shadow: 4px 4px 0px #a69598;
@@ -256,6 +250,9 @@
                 flex-direction: column;
                 gap: 10px;
             }
+            .cta-btn {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
@@ -266,72 +263,66 @@
         <h1>jour à la fois</h1>
         <div class="translation">translation: one day at a time</div>
 
-        <div class="intro-tag">
-            online french tutoring by me, a girl running off caffeine and the voice at the back of her mind &lt;3 
-        </div>
-
         <h2>about me&amp;credentials</h2>
-
-        <p>hi, i'm <u>mihika</u>! i'm a 9th grader taking IGCSE french, and i know how hard it can be to balance language learning with other things. <b>but why would anybody pay a teenager to teach them french when there's more experienced tutors out there?</b></p> 
 
         <div class="content-layout">
             <div class="info-badge">
-                honestly speaking, most tutoring costs enough to make my heart hurt. while i may not have years of teaching experience, i <i>have</i> gotten my friends through every final, pop quiz, and worksheet handed out to them since the seventh grade, and i've been learning french for four years now ♡ i'm taking my DELF B1 certification exam this year too!
+                i'm <b></b><span style='color:#FACDD9;'>m</span><span style='color:#FAD2D5;'>i</span><span style='color:#FAD7D1;'>h</span><span style='color:#FADCCE;'>i</span><span style='color:#FAE1CA;'>k</span><span style='color:#FAE6C6;'>a</span></b>, and this is jour à la fois, a <b>(partially) free</b> learning hub made for french students, by an A2 certified french student herself!
             </div>
 
             <div class="description">
                 <b>my motto?</b> learning french shouldn't make you <i>or</i> your bank account cry!
             </div>
         </div>
-        <h2>rates&amp;class timings</h2>
+
+        <h2>rates</h2>
 
         <div class="content-layout">
             <div class="description">
-                <b>flexible slots available!</b> i'm a <i>busy</i> IGCSE student though, who's always picking up new hobbies and side quests, and i know your free time may be limited too - so, just pop into my instagram dms/email <a href="mailto:mihikayashwanth@gmail.com">mihikayashwanth@gmail.com</a> so we can sort them out!
-                <br><br><span style="color:#E5B3BE;">↳</span> * = these rates are per class, so you are not obligated to pay a monthly fee and lose money in case you can't attend every class.
+                while most worksheets on the <a href="null">hub</a> are free, <b>your girl here needs to make some money too!</b> see my <i>rates</i> down below, and if you're interested, sign up over <a href="https://forms.gle/AbBReR9NJTo4ttEk6">here</a> to become a member or <a href="https://www.instagram.com/jouuralafois">dm me</a> / fill this <a href="https://forms.gle/aXjJR9E2r4MSMKDM8">form</a> for a custom worksheet you'd like me to make! 
+                <br><br><span style="color:#E5B3BE;">↳</span> <span class="ps-highlight">P.S.</span> <u>bundle your worksheets</u> and add up to three grammar and three custom topical categories by becoming a member and signing up for a custom worksheet &lt;3
             </div>
 
             <div class="badge-column">
                 <div class="info-badge right-badge">
-                    <strong>you can choose between 30 and 60 minute classes 2x a week, and/or sign up for a weekly worksheet ☆</strong><br>
+                    <strong>fixed rates ☆</strong><br>
                     <ul style="padding-left: 20px; margin: 10px 0 0 0;"> 
-                        <li style="margin-bottom: 5px;"><b><u>30mins</u>: 200rs*</b></li>
-                        <li style="margin-bottom: 5px;"><b><u>60 mins</u>: 350rs*</b></li>
-                        <li><b><u>french weekly</u> (<u>worksheets</u>): 300rs/month !</b></li>
+                        <li style="margin-bottom: 5px;"><b><u>grammar</u></b> (1 CUSTOM topic that you choose because i'm getting paid): <u>20rs/topic</u></li>
+                        <li style="margin-bottom: 5px;"><b><u>topical</u></b> (1 CUSTOM topic that you choose because i'm getting paid x2): <u>30rs/topic</u></li>
                     </ul>
-                </div>
-                <div class="ps-text">
-                    <span class="ps-highlight">P.S.</span> classes are max 2x a week !
                 </div>
             </div>
         </div>
         
-        <h2>frequently asked questions</h2>
+        <h2>frequently asked questions.</h2>
 
         <details class="faq-dropdown">
-            <summary>who are these classes for?</summary>
+            <summary>who are these worksheets for?</summary>
             <div class="faq-answer-box">
-                perfect for people at A1-A2 level, IGCSE students needing help catching up with homework/exams, or beginners wanting to start their french journey!
+                students from any board (CBSE, ICSE, IGCSE – but as i am an IGCSE student, that is more my niche) complete beginners, and anyone with a passion for language!
             </div>
         </details>
 
         <details class="faq-dropdown">
-            <summary>what platform do we use?</summary>
+            <summary>what platform will i use?</summary>
             <div class="faq-answer-box">
-                classes happen online via google meet or zoom. links will be sent out beforehand!
+                for the free worksheets, you can find them on my jàlf hub linked below, and if you pay for a custom worksheet, you will be e-mailed / directly messaged a document!
             </div>
         </details>
 
         <details class="faq-dropdown">
             <summary>how do payments work?</summary>
             <div class="faq-answer-box">
-                you can pay per class or weekly via UPI/bank transfer. we can finalize the details when scheduling!
+                you can pay every time you order via UPI/cash transfer. we can finalize the details through dms on my instagram!
             </div>
         </details>
 
         <div class="btn-container">
-            <a href="https://forms.gle/9euXi5CEaSSmTtwY6" class="cta-btn" target="_blank">signup form!</a>
-            <a href="https://www.instagram.com/jouuralafois/" class="cta-btn" target="_blank">my instagram &lt;3</a>
+            
+            <a href="#" class="cta-btn" target="_blank"><u>jàlf hub</u>.</a>
+            <a href="https://forms.gle/9euXi5CEaSSmTtwY6" class="cta-btn" target="_blank"><u>become a member</u> 💌</a>
+            <a href="https://www.instagram.com/jouuralafois/" class="cta-btn" target="_blank"><u>my instagram</u> &lt;3</a>
+            <a href="https://forms.gle/aXjJR9E2r4MSMKDM8" class="cta-btn" target="_blank"><u>custom worksheet maker!</u></a>
         </div>
         
         <div class="barcode">
